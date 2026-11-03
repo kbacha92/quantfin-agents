@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "acme": {
+      "label": "ACME"
+    },
+    "4.20_billion": {
+      "label": "4.20 billion"
+    },
+    "512_million": {
+      "label": "512 million"
+    },
+    "single_supplier_region_b": {
+      "label": "single supplier Region B"
+    },
+    "38_percent": {
+      "label": "38 percent"
+    },
+    "region_b": {
+      "label": "Region B"
+    },
+    "withdrew": {
+      "label": "withdrew"
+    },
+    "4.50_billion": {
+      "label": "4.50 billion"
+    },
+    "beacon_materials": {
+      "label": "Beacon Materials"
+    },
+    "specialty_resin_supply": {
+      "label": "specialty resin supply"
+    }
+  },
+  "edges": [
+    {
+      "s": "acme",
+      "p": "fiscal_2024_revenue",
+      "o": "4.20_billion",
+      "text": "ACME reported audited fiscal 2024 revenue of 4.20 billion dollars.",
+      "pub_date": "2024-11-01",
+      "source_file": "2024-11-01_ACME_10-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "fiscal_2024_net_income",
+      "o": "512_million",
+      "text": "ACME reported fiscal 2024 net income of 512 million dollars.",
+      "pub_date": "2024-11-01",
+      "source_file": "2024-11-01_ACME_10-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "supplier_concentration",
+      "o": "single_supplier_region_b",
+      "text": "ACME sourced 90 percent of its specialty resin from a single supplier in Region B.",
+      "pub_date": "2024-11-01",
+      "source_file": "2024-11-01_ACME_10-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "customer_concentration",
+      "o": "38_percent",
+      "text": "ACME's largest customer accounted for 38 percent of revenue.",
+      "pub_date": "2024-11-01",
+      "source_file": "2024-11-01_ACME_10-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "q4_2025_channel_softness",
+      "o": "region_b",
+      "text": "ACME's Q4 fiscal 2025 8-K noted channel softness in Region B.",
+      "pub_date": "2025-02-10",
+      "source_file": "2025-02-10_ACME_8-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "guidance_2025",
+      "o": "withdrew",
+      "text": "In its 8-K ACME withdrew prior full-year guidance citing uncertainty.",
+      "pub_date": "2025-02-10",
+      "source_file": "2025-02-10_ACME_8-K.txt"
+    },
+    {
+      "s": "acme",
+      "p": "analyst_revenue_estimate",
+      "o": "4.50_billion",
+      "text": "A third-party analyst note estimated ACME fiscal 2024 revenue at approximately 4.50 billion, a derived estimate not an audited number.",
+      "pub_date": "2025-01-15",
+      "source_file": "2025-01-15_ACME_analyst_note.txt"
+    },
+    {
+      "s": "acme",
+      "p": "acquired",
+      "o": "beacon_materials",
+      "text": "ACME announced the acquisition of Beacon Materials for 800 million dollars in cash.",
+      "pub_date": "2025-05-20",
+      "source_file": "2025-05-20_ACME_press.txt"
+    },
+    {
+      "s": "beacon_materials",
+      "p": "provides",
+      "o": "specialty_resin_supply",
+      "text": "Beacon Materials gives ACME a second specialty-resin supplier, reducing single-supplier concentration risk.",
+      "pub_date": "2025-05-20",
+      "source_file": "2025-05-20_ACME_press.txt"
+    }
+  ]
+}

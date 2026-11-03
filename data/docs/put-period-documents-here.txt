@@ -1,0 +1,4 @@
+FACTS about the world go here: filings, news, transcripts, notes.
+Prefix filenames with the publication date (2025-02-12_AAPL_10-K.txt);
+documents published after the as-of date are invisible to searches.
+This placeholder is never indexed.
