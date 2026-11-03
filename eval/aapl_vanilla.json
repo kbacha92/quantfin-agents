@@ -1,0 +1,123 @@
+{
+  "run_at": "2026-08-01T20:18:41",
+  "ticker": "AAPL",
+  "arm": "vanilla",
+  "repeats_per_case": 1,
+  "cases": [
+    {
+      "id": "aapl_pit_future_2021-10-29",
+      "capability": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    },
+    {
+      "id": "aapl_pit_visible_2021-10-29",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2022-10-28",
+      "capability": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    },
+    {
+      "id": "aapl_pit_visible_2022-10-28",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2023-11-03",
+      "capability": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    },
+    {
+      "id": "aapl_pit_visible_2023-11-03",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2024-11-01",
+      "capability": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    },
+    {
+      "id": "aapl_pit_visible_2024-11-01",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_num_rsi",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value 66.6698 (\u00b10.5, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'quant:rsi:AAPL:14:2024-11-30' missing; got=[]"
+      ]
+    },
+    {
+      "id": "aapl_num_max_drawdown",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value -0.1661 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'quant:max_drawdown:AAPL:252:2024-11-30' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk91']"
+      ]
+    },
+    {
+      "id": "aapl_num_realized_vol",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value 0.1637 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'quant:realized_vol:AAPL:21:2024-11-30' missing; got=[]"
+      ]
+    },
+    {
+      "id": "aapl_prov_control",
+      "capability": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '391,035' not in answer text"
+      ]
+    }
+  ]
+}

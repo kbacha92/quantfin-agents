@@ -1,0 +1,836 @@
+{
+  "run_at": "2026-08-01T20:07:20",
+  "arm": "baseline",
+  "repeats_per_case": 1,
+  "total": 50,
+  "passed_all_runs": 7,
+  "flaky": [],
+  "by_area": {
+    "pit": {
+      "passed": 4,
+      "total": 15
+    },
+    "provenance": {
+      "passed": 1,
+      "total": 11
+    },
+    "quant": {
+      "passed": 1,
+      "total": 15
+    },
+    "methodology": {
+      "passed": 1,
+      "total": 9
+    }
+  },
+  "cost": {
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_cost_usd": 0.0,
+    "avg_cost_per_case_usd": 0.0
+  },
+  "cases": [
+    {
+      "id": "pit_01_visible_10k",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '38' not in answer text",
+        "none of expect_tools_any ['doc_search'] fired; fired=[]",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_02_future_8k_invisible",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_03_boundary_same_day",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '1.15 billion' not in answer text",
+        "required citation 'doc:2025-02-10_ACME_8-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_04_boundary_day_before",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_05_acquisition_future",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_06_acquisition_visible_later",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain 'supplier' not in answer text",
+        "required citation 'doc:2025-05-20_ACME_press.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_07_empty_corpus_no_hallucination",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_08_price_asof_truncation",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "none of expect_tools_any ['price_history', 'quant_indicator'] fired; fired=[]",
+        "required citation 'yfinance:SYN:2025-03-14:90d' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_01_citation_required",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '4.20 billion' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_02_primary_outranks_derived",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '4.20 billion' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_03_flag_conflict",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '4.20 billion' not in answer text",
+        "must_contain '4.50 billion' not in answer text"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_04_no_citation_for_absent_fact",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_05_derived_price_noncite_as_fact",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_01_rsi",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '52.3673' not in answer text",
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_02_sma",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '145.7614' not in answer text",
+        "required citation 'quant:sma:SYN:50:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_03_ema",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '144.8460' not in answer text",
+        "required citation 'quant:ema:SYN:21:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_04_realized_vol",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:realized_vol:SYN:21:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_05_max_drawdown",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value -50.16 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "must_contain '-50.16%' not in answer text",
+        "required citation 'quant:max_drawdown:DDN:252:2025-03-14' missing; got=[]",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_06_correlation",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '0.885' not in answer text",
+        "required citation 'quant:correlation:CRA-CRB:252:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_07_correlation_one_ticker",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_08_unknown_indicator",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_09_numbers_not_recomputed",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '52.3673' not in answer text",
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_01_definition_from_knowledge",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge']; got stores=[]",
+        "none of expect_tools_any ['knowledge_search'] fired; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_02_method_not_period_fact",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_03_postdates_hindsight_flag",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge']; got stores=[]",
+        "must_contain '252' not in answer text"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_04_drawdown_definition",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge']; got stores=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_05_method_plus_fact_blend",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge', 'quant']; got stores=[]",
+        "expected_value 52.3673 (\u00b10.1, also accepting %/fraction forms) not found among answer numbers",
+        "none of expect_tools_any ['knowledge_search', 'quant_indicator'] fired; fired=[]",
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_09_guidance_withdrawn",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain 'withdrew' not in answer text",
+        "required citation 'doc:2025-02-10_ACME_8-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_10_no_future_leakage_in_summary",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain 'single supplier' not in answer text",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_06_revenue_yoy",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '6 percent' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_07_buyback",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '300 million' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_08_net_income",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '512 million' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_06_no_fabricated_knowledge",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_not_contain 'downside deviation' present in answer text",
+        "status: expected 'insufficient_data', got 'ok'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_10_rsi_bounds_sanity",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value 52.3673 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_11_two_docs_visible",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '1.15 billion' not in answer text",
+        "must_contain '4.20 billion' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]",
+        "required citation 'doc:2025-02-10_ACME_8-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_12_analyst_note_visible",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '4.50 billion' not in answer text",
+        "required citation 'doc:2025-01-15_ACME_analyst_note.txt#chunk0' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_13_press_release_boundary",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "pit_14_price_history_old_asof",
+      "area": "pit",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "none of expect_tools_any ['price_history'] fired; fired=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "chart_01_price_png",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a chart artifact but answer.artifacts is empty",
+        "none of expect_tools_any ['make_chart'] fired; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "chart_02_rsi_panel",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a chart artifact but answer.artifacts is empty",
+        "none of expect_tools_any ['make_chart'] fired; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_09_no_method_as_primary",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '4.20 billion' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "prov_10_citation_for_each_claim",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain 'customer' not in answer text",
+        "must_contain 'supplier' not in answer text",
+        "required citation 'doc:2024-11-01_ACME_10-K.txt#chunk0' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_11_rsi_w21",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value 144.846 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "must_contain '144.8460' not in answer text",
+        "required citation 'quant:ema:SYN:21:2025-03-14' missing; got=[]",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_12_drawdown_sign",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value -50.16 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "must_contain '-50.16%' not in answer text",
+        "required citation 'quant:max_drawdown:DDN:252:2025-03-14' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "quant_13_corr_range",
+      "area": "quant",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected_value 0.885 (\u00b10.005, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'quant:correlation:CRA-CRB:252:2025-03-14' missing; got=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_07_rsi_threshold_definition",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge']; got stores=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_08_method_usable_value_not",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "meth_09_definition_no_price_tool",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "expected a citation from one of ['knowledge']; got stores=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "combo_01_pit_quant_provenance",
+      "area": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:rsi:SYN:14:2025-03-14' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'",
+        "tool 'quant_indicator' expected to fire (all) but did not; fired=[]"
+      ],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    },
+    {
+      "id": "combo_02_insufficient_then_honest",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0.0
+      }
+    }
+  ]
+}

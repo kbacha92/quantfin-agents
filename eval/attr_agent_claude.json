@@ -1,0 +1,58 @@
+{
+  "run_at": "2026-07-13T13:01:03",
+  "ticker": "?",
+  "arm": "agent",
+  "repeats_per_case": 3,
+  "cases": [
+    {
+      "id": "attr_bf_active",
+      "capability": "attribution",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "attr_bf_allocation",
+      "capability": "attribution",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "attr_bf_selection_beta",
+      "capability": "attribution",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "attr_cl_total_pnl",
+      "capability": "attribution",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "attr_cl_sse",
+      "capability": "attribution",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "attr_pit_lookahead",
+      "capability": "attribution",
+      "status": "FLAKY",
+      "passes": 2,
+      "runs": 3,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    }
+  ]
+}

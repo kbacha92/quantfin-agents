@@ -1,0 +1,218 @@
+{
+  "run_at": "2026-07-13T12:47:15",
+  "arm": "agent",
+  "repeats_per_case": 1,
+  "total": 15,
+  "passed_all_runs": 15,
+  "flaky": [],
+  "by_area": {
+    "quant": {
+      "passed": 15,
+      "total": 15
+    }
+  },
+  "cost": {
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 67989,
+    "output_tokens": 9304,
+    "total_cost_usd": 0.343527,
+    "avg_cost_per_case_usd": 0.022902
+  },
+  "cases": [
+    {
+      "id": "quant_01_rsi",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2686,
+        "output_tokens": 274,
+        "cost_usd": 0.012168
+      }
+    },
+    {
+      "id": "quant_02_sma",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2689,
+        "output_tokens": 313,
+        "cost_usd": 0.012762
+      }
+    },
+    {
+      "id": "quant_03_ema",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2686,
+        "output_tokens": 269,
+        "cost_usd": 0.012093
+      }
+    },
+    {
+      "id": "quant_04_realized_vol",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2703,
+        "output_tokens": 309,
+        "cost_usd": 0.012744
+      }
+    },
+    {
+      "id": "quant_05_max_drawdown",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2692,
+        "output_tokens": 281,
+        "cost_usd": 0.012291
+      }
+    },
+    {
+      "id": "quant_06_correlation",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2723,
+        "output_tokens": 314,
+        "cost_usd": 0.012879
+      }
+    },
+    {
+      "id": "quant_07_correlation_one_ticker",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 14402,
+        "output_tokens": 2351,
+        "cost_usd": 0.078471
+      }
+    },
+    {
+      "id": "quant_08_unknown_indicator",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 18281,
+        "output_tokens": 2869,
+        "cost_usd": 0.097878
+      }
+    },
+    {
+      "id": "quant_09_numbers_not_recomputed",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2704,
+        "output_tokens": 278,
+        "cost_usd": 0.012282
+      }
+    },
+    {
+      "id": "quant_10_rsi_bounds_sanity",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2713,
+        "output_tokens": 296,
+        "cost_usd": 0.012579
+      }
+    },
+    {
+      "id": "chart_01_price_png",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2783,
+        "output_tokens": 346,
+        "cost_usd": 0.013539
+      }
+    },
+    {
+      "id": "chart_02_rsi_panel",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2817,
+        "output_tokens": 489,
+        "cost_usd": 0.015786
+      }
+    },
+    {
+      "id": "quant_11_rsi_w21",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2698,
+        "output_tokens": 357,
+        "cost_usd": 0.013449
+      }
+    },
+    {
+      "id": "quant_12_drawdown_sign",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2689,
+        "output_tokens": 264,
+        "cost_usd": 0.012027
+      }
+    },
+    {
+      "id": "quant_13_corr_range",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2723,
+        "output_tokens": 294,
+        "cost_usd": 0.012579
+      }
+    }
+  ]
+}

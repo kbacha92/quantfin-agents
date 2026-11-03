@@ -1,0 +1,688 @@
+{
+  "run_at": "2026-07-13T12:43:07",
+  "arm": "agent",
+  "repeats_per_case": 1,
+  "total": 50,
+  "passed_all_runs": 49,
+  "flaky": [],
+  "by_area": {
+    "pit": {
+      "passed": 15,
+      "total": 15
+    },
+    "provenance": {
+      "passed": 11,
+      "total": 11
+    },
+    "quant": {
+      "passed": 15,
+      "total": 15
+    },
+    "methodology": {
+      "passed": 8,
+      "total": 9
+    }
+  },
+  "cost": {
+    "model": "claude-sonnet-4-6",
+    "input_tokens": 286146,
+    "output_tokens": 39616,
+    "total_cost_usd": 1.452678,
+    "avg_cost_per_case_usd": 0.029054
+  },
+  "cases": [
+    {
+      "id": "pit_01_visible_10k",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2932,
+        "output_tokens": 607,
+        "cost_usd": 0.017901
+      }
+    },
+    {
+      "id": "pit_02_future_8k_invisible",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 16419,
+        "output_tokens": 2850,
+        "cost_usd": 0.092007
+      }
+    },
+    {
+      "id": "pit_03_boundary_same_day",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3411,
+        "output_tokens": 554,
+        "cost_usd": 0.018543
+      }
+    },
+    {
+      "id": "pit_04_boundary_day_before",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 17657,
+        "output_tokens": 2208,
+        "cost_usd": 0.086091
+      }
+    },
+    {
+      "id": "pit_05_acquisition_future",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 6433,
+        "output_tokens": 738,
+        "cost_usd": 0.030369
+      }
+    },
+    {
+      "id": "pit_06_acquisition_visible_later",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3610,
+        "output_tokens": 595,
+        "cost_usd": 0.019755
+      }
+    },
+    {
+      "id": "pit_07_empty_corpus_no_hallucination",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 14897,
+        "output_tokens": 2305,
+        "cost_usd": 0.079266
+      }
+    },
+    {
+      "id": "pit_08_price_asof_truncation",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3077,
+        "output_tokens": 672,
+        "cost_usd": 0.019311
+      }
+    },
+    {
+      "id": "prov_01_citation_required",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2938,
+        "output_tokens": 281,
+        "cost_usd": 0.013029
+      }
+    },
+    {
+      "id": "prov_02_primary_outranks_derived",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3211,
+        "output_tokens": 795,
+        "cost_usd": 0.021558
+      }
+    },
+    {
+      "id": "prov_03_flag_conflict",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3145,
+        "output_tokens": 597,
+        "cost_usd": 0.01839
+      }
+    },
+    {
+      "id": "prov_04_no_citation_for_absent_fact",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 17450,
+        "output_tokens": 2039,
+        "cost_usd": 0.082935
+      }
+    },
+    {
+      "id": "prov_05_derived_price_noncite_as_fact",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2740,
+        "output_tokens": 430,
+        "cost_usd": 0.01467
+      }
+    },
+    {
+      "id": "quant_01_rsi",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2686,
+        "output_tokens": 315,
+        "cost_usd": 0.012783
+      }
+    },
+    {
+      "id": "quant_02_sma",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2689,
+        "output_tokens": 307,
+        "cost_usd": 0.012672
+      }
+    },
+    {
+      "id": "quant_03_ema",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2686,
+        "output_tokens": 263,
+        "cost_usd": 0.012003
+      }
+    },
+    {
+      "id": "quant_04_realized_vol",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2703,
+        "output_tokens": 308,
+        "cost_usd": 0.012729
+      }
+    },
+    {
+      "id": "quant_05_max_drawdown",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2692,
+        "output_tokens": 297,
+        "cost_usd": 0.012531
+      }
+    },
+    {
+      "id": "quant_06_correlation",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2723,
+        "output_tokens": 333,
+        "cost_usd": 0.013164
+      }
+    },
+    {
+      "id": "quant_07_correlation_one_ticker",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 6934,
+        "output_tokens": 1295,
+        "cost_usd": 0.040227
+      }
+    },
+    {
+      "id": "quant_08_unknown_indicator",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 17838,
+        "output_tokens": 2600,
+        "cost_usd": 0.092514
+      }
+    },
+    {
+      "id": "quant_09_numbers_not_recomputed",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2704,
+        "output_tokens": 306,
+        "cost_usd": 0.012702
+      }
+    },
+    {
+      "id": "meth_01_definition_from_knowledge",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3945,
+        "output_tokens": 453,
+        "cost_usd": 0.01863
+      }
+    },
+    {
+      "id": "meth_02_method_not_period_fact",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 18607,
+        "output_tokens": 2296,
+        "cost_usd": 0.090261
+      }
+    },
+    {
+      "id": "meth_03_postdates_hindsight_flag",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3927,
+        "output_tokens": 599,
+        "cost_usd": 0.020766
+      }
+    },
+    {
+      "id": "meth_04_drawdown_definition",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3921,
+        "output_tokens": 555,
+        "cost_usd": 0.020088
+      }
+    },
+    {
+      "id": "meth_05_method_plus_fact_blend",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 4182,
+        "output_tokens": 645,
+        "cost_usd": 0.022221
+      }
+    },
+    {
+      "id": "pit_09_guidance_withdrawn",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3383,
+        "output_tokens": 328,
+        "cost_usd": 0.015069
+      }
+    },
+    {
+      "id": "pit_10_no_future_leakage_in_summary",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3395,
+        "output_tokens": 848,
+        "cost_usd": 0.022905
+      }
+    },
+    {
+      "id": "prov_06_revenue_yoy",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2950,
+        "output_tokens": 329,
+        "cost_usd": 0.013785
+      }
+    },
+    {
+      "id": "prov_07_buyback",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2919,
+        "output_tokens": 295,
+        "cost_usd": 0.013182
+      }
+    },
+    {
+      "id": "prov_08_net_income",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2932,
+        "output_tokens": 264,
+        "cost_usd": 0.012756
+      }
+    },
+    {
+      "id": "meth_06_no_fabricated_knowledge",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 21737,
+        "output_tokens": 1760,
+        "cost_usd": 0.091611
+      }
+    },
+    {
+      "id": "quant_10_rsi_bounds_sanity",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2713,
+        "output_tokens": 269,
+        "cost_usd": 0.012174
+      }
+    },
+    {
+      "id": "pit_11_two_docs_visible",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3417,
+        "output_tokens": 1006,
+        "cost_usd": 0.025341
+      }
+    },
+    {
+      "id": "pit_12_analyst_note_visible",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3129,
+        "output_tokens": 451,
+        "cost_usd": 0.016152
+      }
+    },
+    {
+      "id": "pit_13_press_release_boundary",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3362,
+        "output_tokens": 446,
+        "cost_usd": 0.016776
+      }
+    },
+    {
+      "id": "pit_14_price_history_old_asof",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3519,
+        "output_tokens": 871,
+        "cost_usd": 0.023622
+      }
+    },
+    {
+      "id": "chart_01_price_png",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2783,
+        "output_tokens": 331,
+        "cost_usd": 0.013314
+      }
+    },
+    {
+      "id": "chart_02_rsi_panel",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2815,
+        "output_tokens": 496,
+        "cost_usd": 0.015885
+      }
+    },
+    {
+      "id": "prov_09_no_method_as_primary",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3154,
+        "output_tokens": 434,
+        "cost_usd": 0.015972
+      }
+    },
+    {
+      "id": "prov_10_citation_for_each_claim",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2932,
+        "output_tokens": 439,
+        "cost_usd": 0.015381
+      }
+    },
+    {
+      "id": "quant_11_rsi_w21",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2698,
+        "output_tokens": 321,
+        "cost_usd": 0.012909
+      }
+    },
+    {
+      "id": "quant_12_drawdown_sign",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2689,
+        "output_tokens": 273,
+        "cost_usd": 0.012162
+      }
+    },
+    {
+      "id": "quant_13_corr_range",
+      "area": "quant",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2723,
+        "output_tokens": 325,
+        "cost_usd": 0.013044
+      }
+    },
+    {
+      "id": "meth_07_rsi_threshold_definition",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3930,
+        "output_tokens": 219,
+        "cost_usd": 0.015075
+      }
+    },
+    {
+      "id": "meth_08_method_usable_value_not",
+      "area": "methodology",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_not_contain '14.2 percent' present in answer text",
+        "status: expected 'insufficient_data', got 'ok'"
+      ],
+      "usage": {
+        "input_tokens": 6515,
+        "output_tokens": 1090,
+        "cost_usd": 0.035895
+      }
+    },
+    {
+      "id": "meth_09_definition_no_price_tool",
+      "area": "methodology",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 3930,
+        "output_tokens": 539,
+        "cost_usd": 0.019875
+      }
+    },
+    {
+      "id": "combo_01_pit_quant_provenance",
+      "area": "provenance",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 2737,
+        "output_tokens": 417,
+        "cost_usd": 0.014466
+      }
+    },
+    {
+      "id": "combo_02_insufficient_then_honest",
+      "area": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": [],
+      "usage": {
+        "input_tokens": 19627,
+        "output_tokens": 2622,
+        "cost_usd": 0.098211
+      }
+    }
+  ]
+}

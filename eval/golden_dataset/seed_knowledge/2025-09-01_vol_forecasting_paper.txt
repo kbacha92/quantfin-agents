@@ -1,0 +1,5 @@
+Journal of Quantitative Finance, September 2025. "Realized Volatility Forecasting
+with Range Estimators." We define the realized volatility estimator as the
+annualized standard deviation of daily log returns, scaled by the square root of
+252. METHODOLOGICAL CONTRIBUTION: a range-based correction term. EMPIRICAL FINDING:
+in our 2025 sample, equity-index realized vol averaged 14.2 percent over the year.

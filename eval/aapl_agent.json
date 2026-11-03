@@ -1,0 +1,116 @@
+{
+  "run_at": "2026-08-01T20:16:48",
+  "ticker": "AAPL",
+  "arm": "agent",
+  "repeats_per_case": 1,
+  "cases": [
+    {
+      "id": "aapl_pit_future_2021-10-29",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_visible_2021-10-29",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2022-10-28",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_visible_2022-10-28",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2023-11-03",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_visible_2023-11-03",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_future_2024-11-01",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_pit_visible_2024-11-01",
+      "capability": "pit",
+      "status": "PASS",
+      "passes": 1,
+      "runs": 1,
+      "reasons": []
+    },
+    {
+      "id": "aapl_num_rsi",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:rsi:AAPL:14:2024-11-30' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ]
+    },
+    {
+      "id": "aapl_num_max_drawdown",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:max_drawdown:AAPL:252:2024-11-30' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ]
+    },
+    {
+      "id": "aapl_num_realized_vol",
+      "capability": "numerical",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "required citation 'quant:realized_vol:AAPL:21:2024-11-30' missing; got=[]",
+        "status: expected 'ok', got 'insufficient_data'"
+      ]
+    },
+    {
+      "id": "aapl_prov_control",
+      "capability": "provenance",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 1,
+      "reasons": [
+        "must_contain '391,035' not in answer text",
+        "status: expected 'ok', got 'insufficient_data'"
+      ]
+    }
+  ]
+}

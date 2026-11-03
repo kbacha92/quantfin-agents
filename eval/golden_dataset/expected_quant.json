@@ -1,0 +1,59 @@
+{
+  "as_of": "2025-03-14",
+  "cases": {
+    "sma_SYN_50": {
+      "ticker": "SYN",
+      "indicator": "sma",
+      "window": 50,
+      "expected_value": 145.7614,
+      "source_id": "quant:sma:SYN:50:2025-03-14",
+      "content_value_str": "145.7614",
+      "last_date": "2025-03-14"
+    },
+    "ema_SYN_21": {
+      "ticker": "SYN",
+      "indicator": "ema",
+      "window": 21,
+      "expected_value": 144.846,
+      "source_id": "quant:ema:SYN:21:2025-03-14",
+      "content_value_str": "144.8460",
+      "last_date": "2025-03-14"
+    },
+    "rsi_SYN_14": {
+      "ticker": "SYN",
+      "indicator": "rsi",
+      "window": 14,
+      "expected_value": 52.3673,
+      "source_id": "quant:rsi:SYN:14:2025-03-14",
+      "content_value_str": "52.3673",
+      "last_date": "2025-03-14"
+    },
+    "realized_vol_SYN_21": {
+      "ticker": "SYN",
+      "indicator": "realized_vol",
+      "window": 21,
+      "expected_value": 0.1307,
+      "source_id": "quant:realized_vol:SYN:21:2025-03-14",
+      "content_value_str": "0.1307",
+      "last_date": "2025-03-14"
+    },
+    "max_drawdown_DDN_252": {
+      "ticker": "DDN",
+      "indicator": "max_drawdown",
+      "window": 252,
+      "expected_value": -50.16,
+      "source_id": "quant:max_drawdown:DDN:252:2025-03-14",
+      "content_value_str": "-50.16%",
+      "sessions": 252
+    },
+    "correlation_CRA_CRB_252": {
+      "ticker": "CRA,CRB",
+      "indicator": "correlation",
+      "window": 252,
+      "expected_value": 0.885,
+      "source_id": "quant:correlation:CRA-CRB:252:2025-03-14",
+      "content_value_str": "0.885",
+      "sessions": 252
+    }
+  }
+}

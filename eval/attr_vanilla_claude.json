@@ -1,0 +1,76 @@
+{
+  "run_at": "2026-07-13T13:06:47",
+  "ticker": "?",
+  "arm": "vanilla",
+  "repeats_per_case": 3,
+  "cases": [
+    {
+      "id": "attr_bf_active",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value -0.024019 (\u00b10.0005, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'attribution:bf:2025-03-31_eval_book.csv:Sector' missing; got=[]"
+      ]
+    },
+    {
+      "id": "attr_bf_allocation",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "required citation 'attribution:bf:2025-03-31_eval_book.csv:Sector' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk123']",
+        "required citation 'attribution:bf:2025-03-31_eval_book.csv:Sector' missing; got=[]"
+      ]
+    },
+    {
+      "id": "attr_bf_selection_beta",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value -0.01085 (\u00b10.0005, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'attribution:bf:2025-03-31_eval_book.csv:Sector' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk124']",
+        "required citation 'attribution:bf:2025-03-31_eval_book.csv:Sector' missing; got=[]"
+      ]
+    },
+    {
+      "id": "attr_cl_total_pnl",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value -793.7 (\u00b15.0, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'attribution:cl:2025-03-31_eval_book.csv:Sector:250000' missing; got=['doc:2022-10-28_AAPL_10-K.txt#chunk116', 'doc:2023-11-03_AAPL_10-K.txt#chunk110', 'doc:2024-11-01_AAPL_10-K.txt#chunk112']",
+        "required citation 'attribution:cl:2025-03-31_eval_book.csv:Sector:250000' missing; got=[]"
+      ]
+    },
+    {
+      "id": "attr_cl_sse",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value -1683.4 (\u00b15.0, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'attribution:cl:2025-03-31_eval_book.csv:Sector:250000' missing; got=['doc:2023-11-03_AAPL_10-K.txt#chunk121']",
+        "required citation 'attribution:cl:2025-03-31_eval_book.csv:Sector:250000' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk124']"
+      ]
+    },
+    {
+      "id": "attr_pit_lookahead",
+      "capability": "attribution",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "status: expected 'insufficient_data', got 'ok'"
+      ]
+    }
+  ]
+}

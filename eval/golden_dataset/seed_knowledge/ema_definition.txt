@@ -1,0 +1,7 @@
+Technical Analysis Reference: Exponential Moving Average (EMA). The exponential
+moving average is a type of moving average that places greater weight on the most
+recent prices, making it more responsive to new information than a simple moving
+average. It is computed by applying a smoothing factor to the current price and
+the prior EMA value. Conceptually, EMA reduces lag relative to a simple moving
+average of the same window. This is a methodology definition and is timeless; it
+does not describe any specific security on any specific date.

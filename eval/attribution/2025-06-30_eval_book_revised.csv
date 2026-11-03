@@ -1,0 +1,10 @@
+Ticker,Sector,Portfolio Weight,Cap Weight,Return
+ALA,Alpha,0.145,0.13,-0.041
+ALB,Alpha,0.083,0.095,0.0655
+ALC,Alpha,-0.062,0.085,-0.0122
+BEA,Beta,0.117,0.11,0.093
+BEB,Beta,-0.048,0.07,-0.0287
+BEC,Beta,0.091,0.1,-0.0511
+CIA,Chi,0.134,0.15,0.0248
+CIB,Chi,-0.075,0.09,-0.0733
+CIC,Chi,0.108,0.17,0.0402

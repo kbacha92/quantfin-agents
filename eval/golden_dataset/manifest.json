@@ -1,0 +1,38 @@
+{
+  "total_cases": 50,
+  "by_area": {
+    "pit": 15,
+    "provenance": 11,
+    "quant": 15,
+    "methodology": 9
+  },
+  "as_of_quant": "2025-03-14",
+  "snapshots_required": [
+    "yfinance_CRA_2025-03-14_504d.csv",
+    "yfinance_CRB_2025-03-14_504d.csv",
+    "yfinance_DDN_2025-03-14_433d.csv",
+    "yfinance_SYN_2025-03-14_282d.csv",
+    "yfinance_SYN_2025-03-14_380d.csv",
+    "yfinance_SYN_2025-03-14_90d.csv"
+  ],
+  "schema_fields": [
+    "area",
+    "as_of",
+    "expect_artifact",
+    "expect_citation_source_ids",
+    "expect_citation_store_any",
+    "expect_tools_all",
+    "expect_tools_any",
+    "expected_status",
+    "forbid_citation_source_ids",
+    "forbid_citation_store",
+    "id",
+    "must_contain",
+    "must_not_contain",
+    "query",
+    "rationale",
+    "seed_docs",
+    "seed_knowledge",
+    "snapshots"
+  ]
+}

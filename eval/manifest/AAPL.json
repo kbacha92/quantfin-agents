@@ -1,0 +1,38 @@
+{
+  "ticker": "AAPL",
+  "start": "2020-12-31",
+  "end": "2024-12-31",
+  "acquired_at": "2026-07-13T12:23:20",
+  "filings": [
+    {
+      "filing_date": "2024-11-01",
+      "accession": "0000320193-24-000123",
+      "path": "/Users/kbach/Desktop/quant_agent_v11.8/data/docs/2024-11-01_AAPL_10-K.txt",
+      "source_id": "doc:2024-11-01_AAPL_10-K.txt#chunk0"
+    },
+    {
+      "filing_date": "2023-11-03",
+      "accession": "0000320193-23-000106",
+      "path": "/Users/kbach/Desktop/quant_agent_v11.8/data/docs/2023-11-03_AAPL_10-K.txt",
+      "source_id": "doc:2023-11-03_AAPL_10-K.txt#chunk0"
+    },
+    {
+      "filing_date": "2022-10-28",
+      "accession": "0000320193-22-000108",
+      "path": "/Users/kbach/Desktop/quant_agent_v11.8/data/docs/2022-10-28_AAPL_10-K.txt",
+      "source_id": "doc:2022-10-28_AAPL_10-K.txt#chunk0"
+    },
+    {
+      "filing_date": "2021-10-29",
+      "accession": "0000320193-21-000105",
+      "path": "/Users/kbach/Desktop/quant_agent_v11.8/data/docs/2021-10-29_AAPL_10-K.txt",
+      "source_id": "doc:2021-10-29_AAPL_10-K.txt#chunk0"
+    }
+  ],
+  "prices": {
+    "raw_path": "/Users/kbach/Desktop/quant_agent_v11.8/eval/raw_prices/AAPL.csv",
+    "rows": 1760,
+    "first": "2018-01-02",
+    "last": "2024-12-30"
+  }
+}

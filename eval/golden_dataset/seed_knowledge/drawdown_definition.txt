@@ -1,0 +1,4 @@
+Risk Methodology Reference: Maximum Drawdown. Maximum drawdown is the largest
+peak-to-trough decline of a price or equity series over a stated window, expressed
+as a percentage of the prior peak. It is a path-dependent risk measure. The formula
+is min over time of (value_t / running_max_t - 1). This definition is timeless.

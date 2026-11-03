@@ -1,0 +1,48 @@
+{
+  "run_at": "2026-07-13T12:50:12",
+  "ticker": "?",
+  "arm": "agent",
+  "repeats_per_case": 3,
+  "cases": [
+    {
+      "id": "opt_price_call",
+      "capability": "options",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "opt_greeks_delta",
+      "capability": "options",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "opt_implied_vol",
+      "capability": "options",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "opt_vol_curve_wing",
+      "capability": "options",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    },
+    {
+      "id": "opt_price_put",
+      "capability": "options",
+      "status": "PASS",
+      "passes": 3,
+      "runs": 3,
+      "reasons": []
+    }
+  ]
+}

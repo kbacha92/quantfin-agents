@@ -1,0 +1,68 @@
+{
+  "run_at": "2026-07-13T12:54:01",
+  "ticker": "?",
+  "arm": "vanilla",
+  "repeats_per_case": 3,
+  "cases": [
+    {
+      "id": "opt_price_call",
+      "capability": "options",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "required citation 'option:price:call:100.0:105.0:0.5:0.04:0.25' missing; got=['doc:2022-10-28_AAPL_10-K.txt#chunk110', 'doc:2024-11-01_AAPL_10-K.txt#chunk108']",
+        "required citation 'option:price:call:100.0:105.0:0.5:0.04:0.25' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk108', 'doc:2022-10-28_AAPL_10-K.txt#chunk110']",
+        "required citation 'option:price:call:100.0:105.0:0.5:0.04:0.25' missing; got=[]"
+      ]
+    },
+    {
+      "id": "opt_greeks_delta",
+      "capability": "options",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "required citation 'option:greeks:call:100.0:105.0:0.5:0.04:0.25' missing; got=['doc:2022-10-28_AAPL_10-K.txt#chunk138', 'doc:2022-10-28_AAPL_10-K.txt#chunk139', 'doc:2023-11-03_AAPL_10-K.txt#chunk105']",
+        "required citation 'option:greeks:call:100.0:105.0:0.5:0.04:0.25' missing; got=['doc:2022-10-28_AAPL_10-K.txt#chunk138', 'doc:2022-10-28_AAPL_10-K.txt#chunk139']",
+        "required citation 'option:greeks:call:100.0:105.0:0.5:0.04:0.25' missing; got=[]"
+      ]
+    },
+    {
+      "id": "opt_implied_vol",
+      "capability": "options",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "required citation 'option:implied_vol:call:100.0:110.0:0.5:0.04:5.9604' missing; got=['doc:2022-10-28_AAPL_10-K.txt#chunk111']",
+        "required citation 'option:implied_vol:call:100.0:110.0:0.5:0.04:5.9604' missing; got=['doc:2022-10-28_AAPL_10-K.txt, doc:2023-11-03_AAPL_10-K.txt']",
+        "required citation 'option:implied_vol:call:100.0:110.0:0.5:0.04:5.9604' missing; got=[]"
+      ]
+    },
+    {
+      "id": "opt_vol_curve_wing",
+      "capability": "options",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value 0.2747 (\u00b10.01, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'option:implied_vol:call:100.0:90.0:0.5:0.04:14.6308' missing; got=['doc:2021-10-29_AAPL_10-K.txt#chunk106', 'doc:2022-10-28_AAPL_10-K.txt#chunk110', 'doc:2023-11-03_AAPL_10-K.txt#chunk105']",
+        "required citation 'option:implied_vol:call:100.0:90.0:0.5:0.04:14.6308' missing; got=['doc:2023-11-03_AAPL_10-K.txt#chunk105', 'doc:2022-10-28_AAPL_10-K.txt#chunk110']",
+        "required citation 'option:implied_vol:call:100.0:90.0:0.5:0.04:14.6308' missing; got=['doc:2023-11-03_AAPL_10-K.txt#chunk105']"
+      ]
+    },
+    {
+      "id": "opt_price_put",
+      "capability": "options",
+      "status": "FAIL",
+      "passes": 0,
+      "runs": 3,
+      "reasons": [
+        "expected_value 3.9043 (\u00b10.02, also accepting %/fraction forms) not found among answer numbers",
+        "required citation 'option:price:put:100.0:95.0:0.5:0.04:0.25' missing; got=['doc:2024-11-01_AAPL_10-K.txt#chunk108']"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "run_at": "2026-08-02T04:08:33",
+  "ticker": "?",
+  "arm": "agent",
+  "repeats_per_case": 30,
+  "cases": [
+    {
+      "id": "gen42_000_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_001_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_002_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_003_both",
+      "capability": "attribution_both",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_004_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_005_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_006_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_007_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_008_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_009_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_010_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_011_both",
+      "capability": "attribution_both",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_012_both",
+      "capability": "attribution_both",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_013_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_014_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_015_both",
+      "capability": "attribution_both",
+      "status": "FLAKY",
+      "passes": 21,
+      "runs": 30,
+      "reasons": [
+        "expected_value 6722.9 (\u00b133.61450469264423, also accepting %/fraction forms) not found among answer numbers"
+      ]
+    },
+    {
+      "id": "gen42_016_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_017_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_018_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_019_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_020_mm",
+      "capability": "attribution_mm",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_021_both",
+      "capability": "attribution_both",
+      "status": "FLAKY",
+      "passes": 28,
+      "runs": 30,
+      "reasons": [
+        "expected_value 3408.28 (\u00b117.041392271737806, also accepting %/fraction forms) not found among answer numbers"
+      ]
+    },
+    {
+      "id": "gen42_022_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_023_both",
+      "capability": "attribution_both",
+      "status": "FLAKY",
+      "passes": 29,
+      "runs": 30,
+      "reasons": [
+        "expected_value 1571.38 (\u00b17.856895635394846, also accepting %/fraction forms) not found among answer numbers"
+      ]
+    },
+    {
+      "id": "gen42_024_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_025_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_026_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_027_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_028_plain",
+      "capability": "attribution_plain",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    },
+    {
+      "id": "gen42_029_etf",
+      "capability": "attribution_etf",
+      "status": "PASS",
+      "passes": 30,
+      "runs": 30,
+      "reasons": []
+    }
+  ]
+}

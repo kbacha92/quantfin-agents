@@ -1,0 +1,6 @@
+Technical Analysis Reference: Relative Strength Index (RSI). The RSI is a momentum
+oscillator measuring the speed and magnitude of price changes on a 0 to 100 scale.
+It is computed from average gains and average losses over a lookback window, most
+commonly 14 periods, using Wilder's smoothing. Readings above 70 are conventionally
+considered overbought and readings below 30 oversold. RSI is a methodology, not a
+statement about any specific security on any specific date.
