@@ -1,0 +1,36 @@
+"""Your API keys live here. COPY this file to `keys.local.py` (the loader does
+that for you automatically on first run) and paste your keys between the
+quotes. `keys.local.py` is git-ignored and is never committed or shipped.
+
+Never share or commit `keys.local.py`. If a key is ever exposed, rotate it.
+"""
+
+KEYS = {
+    # Required. Get one at console.anthropic.com
+    "ANTHROPIC_API_KEY": "",
+
+    # Recommended for SEC filing downloads, e.g. "Jane Doe jane@example.com"
+    "SEC_IDENTITY": "",
+
+    # --- Optional: alternate LLM backend (v11.8, Hermes Agent interop) ---
+    # Route every LLM layer through any OpenAI-compatible endpoint instead of
+    # the Anthropic SDK. With Hermes Agent, run `hermes proxy` - it serves
+    # your Hermes-managed provider subscription at http://127.0.0.1:8645/v1
+    # and ignores the bearer token (any string works). The Hermes API server
+    # (default port 8642) speaks the same format with the full agent behind
+    # it; Ollama / vLLM / LiteLLM / LM Studio endpoints also work.
+    # Leave all four blank to keep the Anthropic default.
+    "QA_LLM_BACKEND": "",   # "openai_compat" to enable; blank = anthropic
+    "QA_LLM_BASE_URL": "",  # blank = http://127.0.0.1:8645/v1 (hermes proxy)
+    "QA_LLM_API_KEY": "",   # any string for local proxies; blank = "sk-unused"
+    "QA_MODEL": "",         # a model your endpoint serves, e.g. "Hermes-4-405B"
+    # Optional $/MTok so eval cost reports can price non-Anthropic models
+    # (otherwise they show $0 with pricing="unknown"; token counts stay exact):
+    # "QA_PRICE_INPUT_PER_MTOK": "0.90",
+    # "QA_PRICE_OUTPUT_PER_MTOK": "0.90",
+
+    # Add future keys below, for example:
+    # "POLYGON_API_KEY": "",
+    # "ALPHAVANTAGE_API_KEY": "",
+    # "OPENAI_API_KEY": "",
+}

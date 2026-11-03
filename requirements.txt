@@ -1,0 +1,11 @@
+anthropic>=0.40
+streamlit>=1.36
+pydantic>=2.7
+yfinance>=0.2.40
+pandas>=2.0
+numpy>=1.26
+chromadb>=0.5
+pypdf>=4.0
+requests>=2.31
+matplotlib>=3.8
+openpyxl>=3.1
